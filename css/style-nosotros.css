@@ -1,0 +1,74 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #414c72;
+}
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 12px;
+}
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text {
+    width: 60%; /* Ajusta el ancho del contenedor de texto según sea necesario */
+  }
+  
+  .text h2 {
+    color: #ffffff;
+    font-size: 36px; /* Reducir el tamaño del título principal */
+    font-weight: 600;
+    margin-bottom: 20px; /* Aumentar el espacio entre títulos y párrafos */
+  }
+  
+  .text h5 {
+    color: #ffffff;
+    font-size: 18px; /* Reducir el tamaño del subtítulo */
+    font-weight: 500;
+    margin-bottom: 30px; /* Aumentar el espacio entre subtítulo y párrafos */
+  }
+  
+  .text p {
+    color: #ffffff;
+    font-size: 14px; /* Ajustar el tamaño del texto */
+    line-height: 1.6; /* Aumentar el interlineado para mejorar la legibilidad */
+    margin-bottom: 20px; /* Agregar espacio entre párrafos */
+  }
+    .data {
+    margin-top: 30px;
+    }
+
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover {
+  background: #000;
+}
+
+.spacer{
+    padding: 10px;
+}

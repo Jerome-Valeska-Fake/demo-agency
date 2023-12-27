@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-nosotros.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="testimonio-2.html">Testimonios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    
+    <section class="about-us">
+      <div class="about">
+          <img src="https://images.pexels.com/photos/3727260/pexels-photo-3727260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="pic" />
+        <div class="text">
+          <div class="spacer"></div>
+          <h2>Mision</h2>
+          <p>Brindar un servicio personalizado a nuestros clientes, a través de una cálida atención de nuestro talento humano debidamente preparado y capacitado, organizando viajes únicos, a precios moderados y accesibles, logrando superar las expectativas de cada uno de los viajeros que decide contratarnos. </p>
+          <h2>Vision</h2>
+          <p>Consolidarnos como una de las mejores agencias de viajes a nivel nacional, ofreciendo programas originales con tarifas competitivas, así mismo ser coanfitriones del desarrollo del turismo nacional respetando los entorno naturales, culturales y sociales. </p>
+          <h2>Valores</h2>
+          <p>La empresa se basa en la responsabilidad, la honestidad, el respeto mutuo, el trabajo en equipo, el profesionalismo, la transparencia en las acciones, el compromiso, el crecimiento, la innovación constante y sobre todo la satisfacción de cada uno de nuestros clientes. </p>
+          <div class="data">
+            <a href="#" class="hire">Contactarme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+   
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

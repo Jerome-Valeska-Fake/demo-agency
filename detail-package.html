@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-detail.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="testimonio-2.html">Testimonios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+<div class="spacer"></div>
+<main>
+    <div class="image-package">
+        <img src="https://viajes.nationalgeographic.com.es/medio/2023/07/10/machu-picchu_00000000_f7be269f_230710143504_800x800.jpg" alt="">
+    </div>
+    <h1>MACHUPICCHU</h1>
+    <p>En este programa visitaremos Machu Picchu en tren. Todo empezará en Cusco, a la hora oportuna lo recogeremos del hotel y nos trasladaremos en nuestra movilidad hasta la estación de tren en Ollantaytambo. Al llegar abordaremos el tren que nos llevará hasta el pueblo de Aguas Calientes (Machu Picchu pueblo), en un viaje de 2 horas aproximadamente, durante el recorrido podrá apreciar los hermosos paisajes del valle sagrado. Al llegar a Aguas Calientes abordaremos el bus que nos trasladará al Parque Arqueológico de Machu Picchu, situado en lo alto de la montaña. Nos reuniremos con nuestro guía quien empezará el tour guiado en el que explicará la historia y características de la ciudad Inca, la visita guiada dura 2 horas aproximadamente, luego tendrá tiempo para explorar Machu Picchu libremente. Finalizando la visita retornaremos en bus hasta Aguas Calientes, donde tendremos tiempo para almorzar y explorar el pintoresco pueblo. Por la tarde nos dirigiremos hasta la estación de trenes para abordar el tren de retorno hasta Ollantaytambo, donde nuestro personal lo esperará para trasladarlo hasta Cusco.
+        IMPORTANTE
+        Los horarios de tren están sujetos a la disponibilidad de espacios.
+        El ingreso a la ciudadela de Machu Picchu será en los Primeros horarios
+        </p>
+        <h3>Incluye</h3>
+        <ul>
+            <li>	Charla de información previa al tour.</li>
+            <li>	Traslados en grupo desde Cusco hacia la estación de Ollantaytambo, ida y vuelta.</li>
+            <li>	Tickets de tren desde Ollantaytambo hacia Aguas Calientes, ida y vuelta.</li>
+            <li>	Ticket de bus desde Aguas Calientes hacia Machu Picchu ida y vuelta.</li>
+            <li>	Ingreso a Machu Picchu.</li>
+            <li>	Servicio de guiado en grupo. Guía profesional inglés – español.</li>
+        </ul>
+        <h3>NO incluye</h3>
+        <ul>
+            <li>	Noche de hotel en Cusco</li>
+            <li>	Ingreso a Huayna Picchu o Machu Picchu montaña</li>
+            <li>	Propinas – Alimentación - Otros servicios no mencionados</li>
+        </ul>
+
+        <input type="submit" id="boton" value="Comprar por whatsapp">
+        <input type="submit" id="boton-email" value="Comprar por correo">
+        <input id="callButton" type="submit" value="Llamar a este número">
+</main>
+<script src="js/compras.js"></script>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
