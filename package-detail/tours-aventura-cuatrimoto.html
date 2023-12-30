@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/style-background-detail.css">
+    <link rel="stylesheet" href="../css/style-detail.css">
+
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="../images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../paquetes.html">Paquetes</a></li>
+          <li><a href="../testimonio-2.html">Testimonios</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <main>
+        <div class="image-package">
+          <div style="background-image: url('https://www.inkanmilkyway.com/wp-content/uploads/2021/01/cuatrimotos-cusco-peru-7.jpg');"></div>
+          <div style="background-image: url('https://cdn.getyourguide.com/img/tour/6099e2778e63e.jpeg/148.jpg');"></div>
+          <div style="background-image: url('https://peruvianshades.com/wp-content/uploads/2021/02/CUATRIMOTOS-CAMINO-A-MARAS-CUSCO-PERU-PERUVIAN-SHADES.jpg');"></div>
+        </div>
+        <h1>CUATRI MOTOS</h1>
+        <p>Embárcate en una de las experiencias más emocionantes del Valle Sagrado: "Cuatrimotos en Maras y Moray". Desde Cusco, partiremos hacia Cruzpata, nuestra base, donde recibirás los equipos y una breve práctica con nuestro guía. Iniciaremos el recorrido hacia el laboratorio agrícola de Moray y las salineras de Maras, disfrutando de vistas panorámicas de picos nevados como la Verónica y Chicón. Con una duración de 5 horas, salidas diarias en dos horarios: Mañanas de 7:00 am a 1:00 pm y Tardes de 1:15 pm a 6:30 pm.</p>
+        <p><strong>Incluye:</strong></p>
+        <ul>
+          <li>• Transporte ida y vuelta + más transporte a las salineras</li>
+          <li>• Cuatrimotos</li>
+          <li>• Combustible</li>
+          <li>• Casco</li>
+          <li>• Guantes</li>
+          <li>• Guía profesional en inglés y español</li>
+          <li>• Botiquín de primeros auxilios</li>
+        </ul>
+        <p><strong>No incluye:</strong></p>
+        <ul>
+          <li>• Seguro</li>
+          <li>• <strong>NO INCLUYE BOLETO TURISTICO</strong></li>
+        </ul>
+      
+        <input type="submit" id="boton" value="Comprar por whatsapp">
+        <input type="submit" id="boton-email" value="Comprar por correo">
+        <input id="callButton" type="submit" value="Llamar a este número">
+      </main>
+      
+
+    <script src="../js/compras.js"></script>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+    </script>
+    
+  </body>
+</html>

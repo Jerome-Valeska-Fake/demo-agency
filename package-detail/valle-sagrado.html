@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/style-background-detail.css">
+    <link rel="stylesheet" href="../css/style-detail.css">
+
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="../images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../paquetes.html">Paquetes</a></li>
+          <li><a href="../testimonio-2.html">Testimonios</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <main>
+
+    <div class="image-package">
+        <div style="background-image: url('https://www.mundomapi.com/images/tours/valle-sagrado-tours-cusco-1597877674.jpg');"></div>
+        <div style="background-image: url('https://www.peru.travel/Contenido/General/Imagen/es/593/1.1/valle-sagrado.jpg');"></div>
+        <div style="background-image: url('https://www.tours-machupicchu-peru.com/wp-content/uploads/2021/10/Tour-al-Valle-Sagrado-de-los-Incas.jpg');"></div>
+
+      </div>
+      <h1>TOUR VALLE SAGRADO</h1>
+      <p>En este programa visitaremos los iconos más representativos de la cultura Inca que rodean el Valle Sagrado de los Incas de la ciudad del Cusco.</p>
+      <ul>
+        <li>• Centro Arqueológico de Pisaq</li>
+        <li>• Mercado de Pisaq</li>
+        <li>• Almuerzo Buffet (Urubamba)</li>
+        <li>• Parque Arqueológico de Ollantaytambo</li>
+        <li>• Show de textilería en Chinchero</li>
+      </ul>
+      <h3>Incluye</h3>
+      <p>Bus Turístico + Guía Profesional bilingüe + Almuerzo Buffet (Urubamba)</p>
+      <p>Inicio de Tour: 9:00 am a 18:00 pm</p>
+      <p><strong>NO INCLUYE BOLETO TURISTICO</strong></p>
+  
+      <input type="submit" id="boton" value="Comprar por whatsapp">
+      <input type="submit" id="boton-email" value="Comprar por correo">
+      <input id="callButton" type="submit" value="Llamar a este número">
+    </main>
+
+    <script src="../js/compras.js"></script>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+    </script>
+    
+  </body>
+</html>
