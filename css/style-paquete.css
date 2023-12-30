@@ -57,8 +57,19 @@ p {
 }
 
 /* CARD COMPONENT */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 
 .card {
+  flex: 0 0 calc(33.3333% - 20px); /* Esto mostrará 3 columnas en dispositivos más grandes */
+  max-width: calc(33.3333% - 20px);
   display: grid;
   place-items: center;
   width: 80vw;
@@ -219,7 +230,6 @@ header {
     text-align: left;
     font-size: 2rem;
     color: #fff; /* Color del texto del título */
-    
   }
 
  .spacer{
@@ -227,11 +237,15 @@ header {
   }
 
   @media (max-width: 768px) {
-    /* Adjust card sizes for smaller screens */
     .card {
-      width: 100%;
-      max-width: none;
-      height: auto;
+      flex: 0 0 calc(50% - 20px); /* Esto mostrará 2 columnas en dispositivos medianos */
+      max-width: calc(50% - 20px);
     }
   }
   
+  @media (max-width: 480px) {
+    .card {
+      flex: 0 0 100%; /* Esto mostrará 1 columna en dispositivos más pequeños */
+      max-width: 100%;
+    }
+  }
