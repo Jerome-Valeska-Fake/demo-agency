@@ -13,7 +13,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0e171d;
+  background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+  url("https://th.bing.com/th/id/OIG.9qQfaweB8Oahv8meqmS.?pid=ImgGn");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .testimonial {
   position: relative;

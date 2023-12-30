@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts Links For Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -33,7 +35,17 @@
         <button ><a href="paquetes.html" style="text-decoration: none;color:black">Explorar tours</a></button>
       </div>
     </section>
-
+    
+    <nav id="mainnav" role="navigation">
+      <ul>
+        <li><a href="#"><i class="fa fa-flag"></i><span>Variedad de opciones</span></a></li>
+        <li><a href="#"><i class="fa fa-money"></i></i><span>Precios competitivos</span></a></li>
+        <li><a href="#"><i class="fa fa-map"></i><span>Servicio al Cliente</span></a></li>
+        <li><a href="#"><i class="fa fa-calendar"></i><span>Reserva rapida</span></a></li>
+        
+      </ul>
+    </nav>
+    
     <script>
       const header = document.querySelector("header");
       const hamburgerBtn = document.querySelector("#hamburger-btn");
@@ -44,6 +56,7 @@
 
       // Close mobile menu on close button click
       closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
     </script>
     
   </body>
