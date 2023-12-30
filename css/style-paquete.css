@@ -227,11 +227,11 @@ header {
   }
 
   @media (max-width: 768px) {
-    .menu-links {
-      display: none; /* hide menu on small screens */
-    }
-    .navbar.show-mobile-menu .menu-links {
-      display: flex; /* show menu when the mobile menu is active */
+    /* Adjust card sizes for smaller screens */
+    .card {
+      width: 100%;
+      max-width: none;
+      height: auto;
     }
   }
   
