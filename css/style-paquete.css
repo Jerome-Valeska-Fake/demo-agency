@@ -57,19 +57,8 @@ p {
 }
 
 /* CARD COMPONENT */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 
 .card {
-  flex: 0 0 calc(33.3333% - 20px); /* Esto mostrará 3 columnas en dispositivos más grandes */
-  max-width: calc(33.3333% - 20px);
   display: grid;
   place-items: center;
   width: 80vw;
@@ -230,6 +219,7 @@ header {
     text-align: left;
     font-size: 2rem;
     color: #fff; /* Color del texto del título */
+    
   }
 
  .spacer{
@@ -237,15 +227,15 @@ header {
   }
 
   @media (max-width: 768px) {
+    .mosaic-container {
+      display: block; /* Cambiar a un diseño de bloque en dispositivos más pequeños */
+      padding: 0 20px; /* Ajustar el padding si es necesario */
+    }
+  
     .card {
-      flex: 0 0 calc(50% - 20px); /* Esto mostrará 2 columnas en dispositivos medianos */
-      max-width: calc(50% - 20px);
+      width: 100%; /* Hacer que los cards ocupen el 100% del ancho disponible */
+      max-width: none; /* Eliminar el ancho máximo establecido en dispositivos más grandes */
+      margin-bottom: 20px; /* Espacio entre los cards */
     }
   }
   
-  @media (max-width: 480px) {
-    .card {
-      flex: 0 0 100%; /* Esto mostrará 1 columna en dispositivos más pequeños */
-      max-width: 100%;
-    }
-  }
