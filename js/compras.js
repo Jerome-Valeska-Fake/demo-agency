@@ -89,7 +89,7 @@ botonesEmail.forEach(function(boton) {
       mensaje = "Acabo de ver el paquete UROS y TAQUILLE de puno, me gustaria tener mas informacion";
     }else if(paqueteId === "uros-vip") {
       mensaje = "Acabo de ver el paquete UROS y TAQUILLE, AMANTANI de puno, me gustaria tener mas informacion";
-    }else if(paqueteId === "city-tours-arequipa") {
+    }else if(paqueteId === "city-tour-arequipa") {
       mensaje = "Acabo de ver el paquete CITY TOURS de Arequipa, me gustaria tener mas informacion";
     }else if(paqueteId === "tambopata") {
       mensaje = "Acabo de ver el paquete TAMBOPATA de puerto maldonado, me gustaria tener mas informacion";
