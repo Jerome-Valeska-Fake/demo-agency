@@ -35,6 +35,8 @@ header .navbar {
   color: #C06B3E;
 }
 
+
+
 .navbar .menu-links {
   display: flex;
   list-style: none;
@@ -290,19 +292,17 @@ header .navbar {
     opacity: 1;
   }
 }
-
-/* Estilos para pantallas más pequeñas (responsive) */
 @media screen and (max-width: 768px) {
   #mainnav {
     padding: 15px 0; /* Ajuste del espaciado para pantallas más pequeñas */
+    justify-content: center; /* Centrar elementos horizontalmente */
   }
 
   #mainnav ul {
-    flex-direction: column; /* Cambio a disposición vertical */
-    align-items: center; /* Centrar elementos verticalmente */
+    flex-wrap: wrap; /* Permitir el ajuste de los elementos en varias líneas */
   }
 
   #mainnav li {
-    margin: 10px 0; /* Espaciado entre elementos */
+    margin: 10px; /* Espaciado entre elementos */
   }
 }
