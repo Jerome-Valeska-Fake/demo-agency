@@ -12,7 +12,10 @@
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background: #414c72;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+  url("https://images.pexels.com/photos/1419946/pexels-photo-1419946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .pic {
   height: auto;
@@ -71,4 +74,40 @@
 
 .spacer{
     padding: 10px;
+}
+/* Media Query for Responsive Design */
+@media screen and (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .pic {
+    max-width: 50%;
+  }
+
+  .text {
+    width: 45%;
+    text-align: left;
+  }
+
+  .text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .data {
+    margin-top: 30px;
+  }
+
+  .hire {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
 }

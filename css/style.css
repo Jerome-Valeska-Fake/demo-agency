@@ -173,20 +173,35 @@ header .navbar {
   }
 }
 
-
-#mainnav ul {
-  padding-left: 90em;
-  padding-bottom: 20em;
+#mainnav {
   position: fixed;
   bottom: 0;
-  font-weight: 400;
+  width: 100%; /* Ajusta el ancho del menú */
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo ajustado */
+  padding: 10px 0; /* Espaciado interno ajustado */
   z-index: 100;
-  min-width: 20em;
 }
-#mainnav li {
+
+#mainnav ul {
+  display: flex;
+  justify-content: space-around; /* Distribución de los elementos */
   list-style: none;
-  margin: .5em 0 0;
-  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+}
+
+#mainnav li {
+  font-size: 1.5em; /* Tamaño de la fuente ajustado */
+}
+
+#mainnav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+#mainnav a:hover {
+  color: #C06B3E; /* Color al pasar el ratón */
 }
 #mainnav li:hover span {
   opacity: 1;
@@ -211,10 +226,7 @@ header .navbar {
 #mainnav li.animate:nth-child(4) {
   animation-delay: 0.45s;
 }
-#mainnav a {
-  text-decoration: none;
-  color: #ffffff;
-}
+
 #mainnav i {
   border: 2px solid #ffffff;
   padding: .5em;
@@ -276,5 +288,21 @@ header .navbar {
   100% {
     font-size: 1.75em;
     opacity: 1;
+  }
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media screen and (max-width: 768px) {
+  #mainnav {
+    padding: 15px 0; /* Ajuste del espaciado para pantallas más pequeñas */
+  }
+
+  #mainnav ul {
+    flex-direction: column; /* Cambio a disposición vertical */
+    align-items: center; /* Centrar elementos verticalmente */
+  }
+
+  #mainnav li {
+    margin: 10px 0; /* Espaciado entre elementos */
   }
 }

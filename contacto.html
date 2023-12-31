@@ -51,22 +51,35 @@
         <div class="right-side">
           <div class="topic-text">Envianos un mensaje</div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quasi tempora est tempore ullam neque facilis consequatur aperiam velit architecto!</p>
-          <form action="#">
+          <form id="contact-form" class="contact-form" method="post" action="">
             <div class="input-box">
-              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Nombre" id="nombre" name="Nombre"/>
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Correo" />
+              <input type="text" placeholder="Correo" id="correo" name="Correo"/>
             </div>
             <div class="input-box message-box">
-              <textarea placeholder="Mensaje"></textarea>
+              <textarea placeholder="Mensaje" id="mensaje" name="mensaje"></textarea>
             </div>
             <div class="button">
-              <input type="button" value="Enviar" />
+              <input type="submit" value="Enviar" />
             </div>
           </form>
         </div>
       </div>
     </div>
+
+  <script src="js/personas.js"></script>   
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script> 
   </body>
 </html>

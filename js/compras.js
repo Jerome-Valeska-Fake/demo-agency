@@ -100,7 +100,7 @@ botonesEmail.forEach(function(boton) {
     
     mensaje = encodeURIComponent(mensaje);
     
-    window.open("mailto:email@ejemplo.com?subject=Asunto&body=" + mensaje);
+    window.open("mailto:jeremyn.monares@gmail.com?subject=Asunto&body=" + mensaje);
 
   });
 

@@ -33,18 +33,18 @@
           Somos una empresa de viajes. especializados en brindar las mejores experiencias a cada uno de nuestros viajeros, 
           en los diversos atractivos turísticos a nivel nacional. 
         </p>
-        <button><a href="paquetes.html">Explorar tours</a></button>
+        <button id="explore-tours-btn" class="explore-btn">Explorar tours</button>
       </div>
     </section>
     
-    <nav id="mainnav" role="navigation">
+    <div id="mainnav" role="">
       <ul>
         <li><a href="#"><i class="fa fa-flag"></i><span>Variedad de opciones</span></a></li>
         <li><a href="#"><i class="fa fa-money"></i></i><span>Precios competitivos</span></a></li>
         <li><a href="#"><i class="fa fa-map"></i><span>Servicio al Cliente</span></a></li>
         <li><a href="#"><i class="fa fa-calendar"></i><span>Reserva rapida</span></a></li>
       </ul>
-    </nav>
+    </div>
     
     <script>
       const header = document.querySelector("header");
@@ -56,6 +56,15 @@
 
       // Close mobile menu on close button click
       closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+      document.addEventListener("DOMContentLoaded", function() {
+        const exploreBtn = document.getElementById("explore-tours-btn");
+      
+        exploreBtn.addEventListener("click", function() {
+          window.location.href = "paquetes.html"; // Redirige a la página "paquetes.html"
+        });
+      });
+      
       
     </script>
     
