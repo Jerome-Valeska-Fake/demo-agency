@@ -1,23 +1,110 @@
 // Al hacer clic en el botón
-document.getElementById("boton").addEventListener("click", function() {
+const botonesComprar = document.querySelectorAll(".boton-comprar");
 
-    // Codificar el mensaje  
-    var mensaje = encodeURIComponent("Acabo de ver este paquete en tu página, quiero más información");
-  
-    // Redireccionar a WhatsApp con el número y mensaje
-    window.open("https://wa.me/+51938696984?text=" + mensaje); 
-  
+// Recorrerlos  
+botonesComprar.forEach(function(boton) {
+
+  // Obtener el ID del paquete
+  const paqueteId = boton.dataset.paquete;
+
+  // Agregar listener al botón
+  boton.addEventListener("click", function() {
+
+    // Determinar mensaje según paquete
+    let mensaje;
+    if(paqueteId === "city-tour") {
+      mensaje = "Acabo de ver el paquete CITY TOUR de cusco tradicional, me gustaria tener mas informacion";
+    } else if(paqueteId === "cuatrimoto") {
+      mensaje = "Acabo de ver el paquete de CUATRIMOTOS de tours de aventuras, me gustaria tener mas informacion";
+    } else if(paqueteId === "valle-sur") {
+      mensaje = "Acabo de ver el paquete VALLE SUR de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-sagrado") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-vip") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO VIP de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-vip") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO VIP de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "camino-inka") {
+      mensaje = "Acabo de ver el paquete CAMINO INKA de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "camino-inka-VIP") {
+      mensaje = "Acabo de ver el paquete CAMINO INKA VIP de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "cañon-colca") {
+      mensaje = "Acabo de ver el paquete CAÑON DE COLCA de tours Arequipa, me gustaria tener mas informacion";
+    }else if(paqueteId === "vinicunca") {
+      mensaje = "Acabo de ver el paquete VINICUNCA de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "huamantay") {
+      mensaje = "Acabo de ver el paquete LAGUNA HUAMANTAY de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "uros") {
+      mensaje = "Acabo de ver el paquete UROS y TAQUILLE de puno, me gustaria tener mas informacion";
+    }else if(paqueteId === "uros-vip") {
+      mensaje = "Acabo de ver el paquete UROS y TAQUILLE, AMANTANI de puno, me gustaria tener mas informacion";
+    }else if(paqueteId === "city-tours-arequipa") {
+      mensaje = "Acabo de ver el paquete CITY TOURS de Arequipa, me gustaria tener mas informacion";
+    }else if(paqueteId === "tambopata") {
+      mensaje = "Acabo de ver el paquete TAMBOPATA de puerto maldonado, me gustaria tener mas informacion";
+    }else if(paqueteId === "puerto-maldonado") {
+      mensaje = "Acabo de ver el paquete PUERTO MALDONADO CITY TOUR de puerto maldonado, me gustaria tener mas informacion";
+    }
+
+    // Enviar a WhatsApp
+    mensaje = encodeURIComponent(mensaje);
+    window.open("https://wa.me/+51938696984?text=" + mensaje);
+
   });
 
-  document.getElementById("boton-email").addEventListener("click", function(){
+});
 
-    // Obtener datos
-    var cuerpoMensaje = "Información sobre el paquete ";
+const botonesEmail = document.querySelectorAll("#boton-email");
+
+botonesEmail.forEach(function(boton) {
+
+  const paqueteId = boton.dataset.paquete;
+
+  boton.addEventListener("click", function() {
     
-    // Redireccionar a email  
-    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=jeremyn.monares@gmail.com&su=INfo&body="+cuerpoMensaje);
-  
+    let mensaje;
+    if(paqueteId === "city-tour") {
+      mensaje = "Acabo de ver el paquete CITY TOUR de cusco tradicional, me gustaria tener mas informacion";
+    } else if(paqueteId === "cuatrimoto") {
+      mensaje = "Acabo de ver el paquete de CUATRIMOTOS de tours de aventuras, me gustaria tener mas informacion";
+    } else if(paqueteId === "valle-sur") {
+      mensaje = "Acabo de ver el paquete VALLE SUR de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-sagrado") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-vip") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO VIP de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "valle-vip") {
+      mensaje = "Acabo de ver el paquete VALLE SAGRADO VIP de cusco tradicional, me gustaria tener mas informacion";
+    }else if(paqueteId === "camino-inka") {
+      mensaje = "Acabo de ver el paquete CAMINO INKA de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "camino-inka-VIP") {
+      mensaje = "Acabo de ver el paquete CAMINO INKA VIP de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "cañon-colca") {
+      mensaje = "Acabo de ver el paquete CAÑON DE COLCA de tours Arequipa, me gustaria tener mas informacion";
+    }else if(paqueteId === "vinicunca") {
+      mensaje = "Acabo de ver el paquete VINICUNCA de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "huamantay") {
+      mensaje = "Acabo de ver el paquete LAGUNA HUAMANTAY de caminatas, me gustaria tener mas informacion";
+    }else if(paqueteId === "uros") {
+      mensaje = "Acabo de ver el paquete UROS y TAQUILLE de puno, me gustaria tener mas informacion";
+    }else if(paqueteId === "uros-vip") {
+      mensaje = "Acabo de ver el paquete UROS y TAQUILLE, AMANTANI de puno, me gustaria tener mas informacion";
+    }else if(paqueteId === "city-tours-arequipa") {
+      mensaje = "Acabo de ver el paquete CITY TOURS de Arequipa, me gustaria tener mas informacion";
+    }else if(paqueteId === "tambopata") {
+      mensaje = "Acabo de ver el paquete TAMBOPATA de puerto maldonado, me gustaria tener mas informacion";
+    }else if(paqueteId === "puerto-maldonado") {
+      mensaje = "Acabo de ver el paquete PUERTO MALDONADO CITY TOUR de puerto maldonado, me gustaria tener mas informacion";
+    }
+
+    
+    mensaje = encodeURIComponent(mensaje);
+    
+    window.open("mailto:email@ejemplo.com?subject=Asunto&body=" + mensaje);
+
   });
+
+});
 
   // Seleccionar por ID
 const button = document.getElementById("callButton");

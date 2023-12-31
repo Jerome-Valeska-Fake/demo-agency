@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/style-background-detail.css">
+    <link rel="stylesheet" href="../css/style-detail.css">
+
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="../images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../paquetes.html">Paquetes</a></li>
+          <li><a href="../testimonio-2.html">Testimonios</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <main>
+        <div class="image-package">
+            <div style="background-image: url('https://elcomercio.pe/resizer/OElaZUOo1Nykz-wK3YkSHHikkhM=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/PA2K3JXPDVGQVMC6NSR4UDHXNE.jpg');"></div>
+            <div style="background-image: url('https://www.quechuasperuviajes.com/wp-content/uploads/2017/05/tambopata-tour.jpg');"></div>
+            <div style="background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/0f/5d/79.jpg');"></div>
+          </div>
+          <h1>TOUR TAMBOPATA PUERTO MALDONADO 2D/1N</h1>
+            <h2>DÍA 1</h2>
+            <ul>
+                <li>Recojo del aeropuerto y/o terminal terrestre, traslado hasta la oficina para dejar equipajes no necesarios para el tour.</li>
+                <li>Transporte al puerto (puerto capitanía) 15 minutos en bote río abajo, por el río Madre de Dios hasta el lodge.</li>
+                <li>Caminata guiada por los senderos del lodge para explorar la fauna y flora local.</li>
+                <li>Almuerzo y viaje en bote de 20 minutos hacia la Isla de los Monos, donde habitan 5 especies de monos.</li>
+                <li>Observación de caimanes al atardecer con ayuda de linternas y explicaciones del guía.</li>
+                <li>Noche en el confortable lodge.</li>
+            </ul>
+
+            <h2>DÍA 2</h2>
+            <ul>
+                <li>Visita temprana (5:00 am) a la collpa de loros la cachuela para observar loros reunidos en la pared del río Madre de Dios.</li>
+                <li>Desayuno en el lodge y traslado al aeropuerto o terminal de buses.</li>
+            </ul>
+
+            <h2>Recomendaciones</h2>
+            <ul>
+                <li>Repelente de mosquitos con más del 30% de diethyltuamide.</li>
+                <li>Bloqueador solar, lentes de sol y sombrero.</li>
+                <li>Poncho de lluvia, pantalones y camiseta larga.</li>
+                <li>Linternas, sandalias y zapatillas para caminar.</li>
+                <li>Botella vacía para recargar agua, prismáticos "binoculares" y bolsas plásticas.</li>
+                <li>Mochila pequeña para caminatas.</li>
+            </ul>
+
+            <h2>Incluye</h2>
+            <ul>
+                <li>Guía naturista, conservacionista y bilingüe.</li>
+                <li>Comidas desde el almuerzo del primer día (normal y vegetariana opcional).</li>
+                <li>Transporte recojo y regreso al aeropuerto o terminal terrestre.</li>
+                <li>Habitaciones en el albergue, botiquín de primeros auxilios y botas de jebe en caso de lluvias.</li>
+            </ul>
+
+            <h2>No incluye</h2>
+            <ul>
+                <li>Bebidas alcohólicas y boletos de ingreso a la Reserva Tambopata S/. 30.00.</li>
+            </ul>
+
+        <input type="submit" id="boton" class="boton-comprar" value="Comprar por whatsapp" data-paquete="tambopata">
+        <input type="submit" id="boton-email" value="Comprar por correo" data-paquete="tambopata">
+        <input id="callButton" type="submit" value="Llamar a este número">
+      </main>
+      
+     
+
+      <script src="../js/compras.js"></script>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+    </script>
+    
+  </body>
+</html>
+
+  

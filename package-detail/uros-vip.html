@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/style-background-detail.css">
+    <link rel="stylesheet" href="../css/style-detail.css">
+
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="../images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../paquetes.html">Paquetes</a></li>
+          <li><a href="../testimonio-2.html">Testimonios</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <main>
+        <div class="image-package">
+            <div style="background-image: url('https://images.pexels.com/photos/19032103/pexels-photo-19032103/free-photo-of-casas-punto-de-referencia-barcos-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+            <div style="background-image: url('https://images.pexels.com/photos/16881400/pexels-photo-16881400/free-photo-of-isla-de-los-uros.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+            <div style="background-image: url('https://images.pexels.com/photos/14216682/pexels-photo-14216682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          </div>
+        <h1>UROS, TAQUILE Y AMANTANI - 2D/1N</h1>
+        <h2>DÍA 01:</h2>
+        <p>07:50am a 08:10am Recojo de hoteles ubicados en el centro de Puno para trasladarlos hacia el puerto.</p>
+        <p>08:20am - Llegada al Puerto y subida a la embarcación para iniciar nuestro viaje en lancha hacia el primer punto que es la Isla de los Uros; al cual llegaremos en un promedio de 30 minutos; en el trayecto podremos observar parte del Lago Titicaca.</p>
+        <p>Al llegar a la Isla podremos apreciar a un grupo de personas vestidas con sus atuendos típicos del lugar, quienes nos darán una afectuosa bienvenida. Al desembarcar de la lancha notaremos como las islas están flotando debajo del agua; en el lugar nos acomodaremos para poder escuchar a nuestro guía quien nos brindará una información detallada de cómo se originaron las islas, materiales que utilizaron para su construcción y como viven los pobladores en el lugar, Después de la explicación tendremos tiempo para tomarnos fotos y visitar las casitas de los pobladores.</p>
+        <p>Opcionalmente podremos visitar una segunda isla en balsas de totora (S/. 10.00 precio del paseo) donde pueden degustar de algún plato típico de la zona o comprar artesanía del lugar.</p>
+        <p>Continuamos nuestro camino en un viaje de 03 horas aprox. por el lago Titicaca para llegar a la Isla natural de Amantani; ahí los pobladores nos estarán esperando para poder acompañarnos hacia sus respectivas casas donde pasaremos la noche. Nos instalaremos en nuestros respectivos cuartos y luego tendremos un almuerzo familiar donde podremos compartir un poco sobre su forma de vida en la isla.</p>
+        <p>Por la tarde ascenderemos a los templos Pachatata y Pachamama; podremos apreciar una vista panorámica del atardecer del Lago Titicaca, luego iniciamos nuestro descenso hacia la plaza principal donde cada familia nos estará esperando para retornar al alojamiento y cenar todos juntos, posteriormente podremos participar de una peña show que nos preparan los pobladores para compartir sobre sus costumbres y música tradicional. Pernocte.</p>
+
+      
+        <h2>DÍA 02:</h2>
+        <p>Después del desayuno, bajamos hacia el puerto para dirigirnos hacia la Isla de Taquile al cual llegaremos en un promedio de 01 hora. Al llegar comenzaremos nuestra caminata en ascenso de 40 minutos aprox. con dirección hacia la plaza principal de la isla, donde podremos visitar el museo textil, su iglesia colonial y demás.</p>
+        <p>Luego podremos almorzar; nuestros alimentos consisten en una sopa de quinua como entrada y un plato de fondo a base de trucha; como bebida es tradicional tomar mate de coca o de muña que son muy buenos para evitar el mal de altura y dolor de estómago. Nuestro guía nos brindará una explicación acerca de la historia de la isla, vestimenta de los pobladores y sus principales producciones.</p>
+        <p>Tendremos tiempo libre para tomarnos fotos y luego empezaremos el descenso hacia el puerto para embarcar en la lancha e iniciar nuestro camino de retorno al puerto principal de Puno.</p>
+        <p>03:30pm Llegada al puerto de Puno y traslado al centro de la ciudad. Fin de nuestro servicio.</p>
+
+        <input type="submit" id="boton" class="boton-comprar" value="Comprar por whatsapp" data-paquete="uros-vip">
+        <input type="submit" id="boton-email" value="Comprar por correo" data-paquete="uros-vip">
+        <input id="callButton" type="submit" value="Llamar a este número">
+      </main>
+      
+     
+
+      <script src="../js/compras.js"></script>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+    </script>
+    
+  </body>
+</html>
+
+  

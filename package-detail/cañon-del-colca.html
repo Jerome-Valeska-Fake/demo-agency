@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERUVIAM INKA TOURS TRAVEL</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/style-background-detail.css">
+    <link rel="stylesheet" href="../css/style-detail.css">
+
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="../images/logo.png" alt="" width="150px" height="100px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../paquetes.html">Paquetes</a></li>
+          <li><a href="../testimonio-2.html">Testimonios</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contactanos</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <main>
+        <div class="image-package">
+            <div style="background-image: url('https://denomades.imgix.net/destinos/arequipa/367/vista-panoramica-pasajera-denomades-colca.jpg');"></div>
+            <div style="background-image: url('https://images.pexels.com/photos/6447942/pexels-photo-6447942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+            <div style="background-image: url('https://images.pexels.com/photos/6448001/pexels-photo-6448001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          </div>
+          <h1>CAÑÓN DEL COLCA - FULL DAY</h1>
+          <p>03:00 am – 03:30am: Te recogeremos de tu hospedaje y partiremos en nuestro bus privado hacia el Cañón del Colca. Luego de 4 horas de viaje en bus, nos dirigiremos directamente a la Cruz del Cóndor, solo pararemos antes en el pueblo de Chivay para desayunar.</p>
+          <p>08:30am - Llegaremos a la Cruz del Cóndor, una de las más impresionantes vistas dentro del Cañón más profundo del mundo. Aquí veremos al majestuoso Cóndor Andino, si tienes suerte puede que vuelen sobre tu cabeza (cruza los dedos). Acércate más para obtener sorprendentes fotos de estas aves, quienes con su presencia hacen que esta experiencia en el Cañón sea única. De regreso a Chivay haremos una parada en las villas de Pinchollo, Maca y Yanque, todas son pequeñas villas locales con Iglesias coloniales, tumbas y terrazas preincaicas. Veremos el impacto de vivir en el segundo cañón más profundo del mundo.</p>
+          <p>12:00pm - Llegaremos a Chivay para visitar las aguas termales, podrás bañarte si así lo deseas y luego haremos una parada para almorzar en un restaurante local.</p>
+          <p>En el camino de regreso a Arequipa, pararemos en Patapampa, un mirador increíble donde verás los volcanes Ampato, Sabancaya y Hualca - Hualca uno al lado del otro. Este es también el punto más alto que alcanzaremos a 4800 metros sobre el nivel del mar en Pampa Cañahuas.</p>
+          <p>17:30pm - Llegaremos de regreso a Arequipa y te dejaremos en la puerta de tu hospedaje.</p>
+        
+
+        <input type="submit" id="boton" class="boton-comprar" value="Comprar por whatsapp" data-paquete="cañon-colca">
+        <input type="submit" id="boton-email" value="Comprar por correo" data-paquete="cañon-colca">
+        <input id="callButton" type="submit" value="Llamar a este número">
+      </main>
+      
+     
+
+      <script src="../js/compras.js"></script>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+    </script>
+    
+  </body>
+</html>
+
+  
