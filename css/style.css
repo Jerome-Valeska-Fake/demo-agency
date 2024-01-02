@@ -178,42 +178,33 @@ header .navbar {
 #mainnav {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
+  width: 100%; /* Ajusta el ancho del menú */
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo ajustado */
+  padding: 10px 0; /* Espaciado interno ajustado */
   z-index: 100;
 }
 
 #mainnav ul {
+  display: flex;
+  justify-content: space-around; /* Distribución de los elementos */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 #mainnav li {
-  font-size: 1.2em;
-  margin-bottom: 10px; /* Agregado margen inferior entre elementos */
+  font-size: 1.5em; /* Tamaño de la fuente ajustado */
 }
 
 #mainnav a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.3s;
+  transition: color 0.3s; /* Efecto de transición al pasar el ratón */
 }
 
 #mainnav a:hover {
-  color: #C06B3E;
+  color: #C06B3E; /* Color al pasar el ratón */
 }
-
-/* Estilos adicionales para el acordeón */
-#mainnav li span {
-  display: none;
-}
-
-#mainnav li.active span {
-  display: inline;
-}
-
 #mainnav li:hover span {
   opacity: 1;
   transition: 0.25s;
