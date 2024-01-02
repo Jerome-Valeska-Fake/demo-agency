@@ -50,7 +50,7 @@ botonesComprar.forEach(function(boton) {
 
     // Enviar a WhatsApp
     mensaje = encodeURIComponent(mensaje);
-    window.open("https://wa.me/+5195300099?text=" + mensaje);
+    window.open("https://wa.me/+51953000099?text=" + mensaje);
 
   });
 
