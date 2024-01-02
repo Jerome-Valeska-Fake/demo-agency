@@ -178,33 +178,36 @@ header .navbar {
 #mainnav {
   position: fixed;
   bottom: 0;
-  width: 100%; /* Ajusta el ancho del menú */
-  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo ajustado */
-  padding: 10px 0; /* Espaciado interno ajustado */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
   z-index: 100;
+  display: flex;
+  justify-content: space-around; /* Cambiado de space-between a space-around */
+  align-items: center;
 }
 
 #mainnav ul {
-  display: flex;
-  justify-content: space-around; /* Distribución de los elementos */
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 #mainnav li {
-  font-size: 1.5em; /* Tamaño de la fuente ajustado */
+  font-size: 1.2em; /* Ajustado el tamaño de la fuente */
 }
 
 #mainnav a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.3s; /* Efecto de transición al pasar el ratón */
+  transition: color 0.3s;
 }
 
 #mainnav a:hover {
-  color: #C06B3E; /* Color al pasar el ratón */
+  color: #C06B3E;
 }
+
 #mainnav li:hover span {
   opacity: 1;
   transition: 0.25s;
