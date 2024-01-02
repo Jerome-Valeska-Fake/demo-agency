@@ -65,7 +65,22 @@
         });
       });
       
-      
+      document.addEventListener("DOMContentLoaded", function() {
+      const menuItems = document.querySelectorAll("#mainnav li");
+
+      menuItems.forEach(item => {
+        item.addEventListener("click", function() {
+          menuItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+
+          item.classList.toggle("active");
+        });
+      });
+    });
+
     </script>
     
   </body>

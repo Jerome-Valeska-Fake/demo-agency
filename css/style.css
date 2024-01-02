@@ -196,7 +196,7 @@ header .navbar {
 
 #mainnav li {
   font-size: 1.2em;
-  margin-bottom: 10px; /* Añadido margen inferior */
+  margin-right: 10px; /* Añadido margen derecho entre elementos */
 }
 
 #mainnav a {
