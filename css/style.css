@@ -183,8 +183,8 @@ header .navbar {
   padding: 10px 0;
   z-index: 100;
   display: flex;
-  justify-content: space-around; /* Cambiado de space-between a space-around */
-  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: flex-end; /* Alinear en la parte inferior */
 }
 
 #mainnav ul {
@@ -195,7 +195,8 @@ header .navbar {
 }
 
 #mainnav li {
-  font-size: 1.2em; /* Ajustado el tamaño de la fuente */
+  font-size: 1.2em;
+  margin-bottom: 10px; /* Añadido margen inferior */
 }
 
 #mainnav a {
