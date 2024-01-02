@@ -50,7 +50,7 @@ botonesComprar.forEach(function(boton) {
 
     // Enviar a WhatsApp
     mensaje = encodeURIComponent(mensaje);
-    window.open("https://wa.me/+51938696984?text=" + mensaje);
+    window.open("https://wa.me/+5195300099?text=" + mensaje);
 
   });
 
@@ -102,7 +102,7 @@ botonesEmail.forEach(function(boton) {
         }
 
       mensaje = encodeURIComponent(mensaje); 
-      window.open("mailto:jeremyn.monares@gmail.com?subject=Asunto&body=" + mensaje); 
+      window.open("mailto:peruvianinkatorustravel@gmail.com?subject=Asunto&body=" + mensaje); 
     }); 
   });
 
@@ -115,6 +115,6 @@ const button = document.getElementById("callButton");
 button.addEventListener("click", () => {
 
   // Redireccionar a la URL 
-  window.location.href = "tel:+51967574733";
+  window.location.href = "tel:+51953000099";
 
 });
