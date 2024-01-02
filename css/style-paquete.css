@@ -53,6 +53,7 @@ p {
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  
 }
 
 .card > * {
@@ -219,4 +220,24 @@ header {
     max-width: none;
     margin-bottom: 20px;
   }
+}
+
+
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  background-color: var(--brand-color);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: darken(var(--brand-color), 10%);
 }
