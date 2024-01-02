@@ -1,38 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
-
 :root {
-  /* Colors */
   --brand-color: hsl(46, 100%, 50%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
-  /* Fonts */
   --font-title: "Montserrat", sans-serif;
   --font-text: "Lato", sans-serif;
 }
 
-
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h2,
-p {
   margin: 0;
 }
 
-/* GLOBAL STYLES */
 body {
   display: grid;
   place-items: center;
   height: auto;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-  url("https://wallpapercrafter.com/desktop/249325-machu-picchu-the-ancient-inca-city-in-peru_.jpg");
+    url("https://wallpapercrafter.com/desktop/249325-machu-picchu-the-ancient-inca-city-in-peru_.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,8 +43,6 @@ p {
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
-
-/* CARD COMPONENT */
 
 .card {
   display: grid;
@@ -103,7 +89,6 @@ p {
 .card__title {
   position: relative;
   width: fit-content;
-  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
 }
 
 .card__title::after {
@@ -119,7 +104,6 @@ p {
 .card__button {
   padding: 0.75em 1.6em;
   width: fit-content;
-  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
   font-variant: small-caps;
   font-weight: bold;
   border-radius: 0.45em;
@@ -200,42 +184,39 @@ p {
   }
 }
 
-/* Estilos para el diseño mosaico */
 header {
-    z-index: 999; /* Asegura que la barra de navegación esté sobre el contenido */
-  }
-  
+  z-index: 999;
+}
+
+.mosaic-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mosaic-title {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.spacer {
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
   .mosaic-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding-top: 25px; /* Espacio para la barra de navegación */
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .mosaic-title {
-    grid-column: 1 / -1; /* Ocupa todas las columnas */
-    text-align: left;
-    font-size: 2rem;
-    color: #fff; /* Color del texto del título */
-    
+    display: block;
+    padding: 0 20px;
   }
 
- .spacer{
-    padding: 50px;
+  .card {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
   }
-
-  @media (max-width: 768px) {
-    .mosaic-container {
-      display: block; /* Cambiar a un diseño de bloque en dispositivos más pequeños */
-      padding: 0 20px; /* Ajustar el padding si es necesario */
-    }
-  
-    .card {
-      width: 100%; /* Hacer que los cards ocupen el 100% del ancho disponible */
-      max-width: none; /* Eliminar el ancho máximo establecido en dispositivos más grandes */
-      margin-bottom: 20px; /* Espacio entre los cards */
-    }
-  }
-  
+}
