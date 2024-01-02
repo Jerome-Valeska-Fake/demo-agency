@@ -1,4 +1,4 @@
-/* Importing Google font - Poppins */
+/* Importando Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -34,8 +34,6 @@ header .navbar {
 .navbar .logo span {
   color: #C06B3E;
 }
-
-
 
 .navbar .menu-links {
   display: flex;
@@ -132,7 +130,6 @@ header .navbar {
     font-size: 1.7rem;
   }
 
-    
   #hamburger-btn, #close-menu-btn {
     display: block;
   }
@@ -169,7 +166,7 @@ header .navbar {
     font-size: 2.3rem;
     line-height: 60px;
   }
-  
+
   .hero-section .content button {
     padding: 9px 18px;
   }
@@ -178,33 +175,34 @@ header .navbar {
 #mainnav {
   position: fixed;
   bottom: 0;
-  width: 100%; /* Ajusta el ancho del menú */
-  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo ajustado */
-  padding: 10px 0; /* Espaciado interno ajustado */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
   z-index: 100;
 }
 
 #mainnav ul {
   display: flex;
-  justify-content: space-around; /* Distribución de los elementos */
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 #mainnav li {
-  font-size: 1.5em; /* Tamaño de la fuente ajustado */
+  font-size: 1.5em;
 }
 
 #mainnav a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.3s; /* Efecto de transición al pasar el ratón */
+  transition: color 0.3s;
 }
 
 #mainnav a:hover {
-  color: #C06B3E; /* Color al pasar el ratón */
+  color: #C06B3E;
 }
+
 #mainnav li:hover span {
   opacity: 1;
   transition: 0.25s;
@@ -216,15 +214,19 @@ header .navbar {
   animation-name: easeOutBounce;
   animation-fill-mode: forwards;
 }
+
 #mainnav li.animate:nth-child(4) {
   animation-delay: 0s;
 }
+
 #mainnav li.animate:nth-child(4) {
   animation-delay: 0.15s;
 }
+
 #mainnav li.animate:nth-child(4) {
   animation-delay: 0.3s;
 }
+
 #mainnav li.animate:nth-child(4) {
   animation-delay: 0.45s;
 }
@@ -234,6 +236,7 @@ header .navbar {
   padding: .5em;
   border-radius: 50%;
 }
+
 #mainnav span {
   color: #ffffff;
   padding: .35em;
@@ -264,7 +267,6 @@ header .navbar {
   border-color: transparent #ffffff transparent transparent;
 }
 
-/* Imitates jQuery UI's ease-out-bounce animation effect */
 @keyframes easeOutBounce {
   0% {
     font-size: 0;
@@ -292,17 +294,26 @@ header .navbar {
     opacity: 1;
   }
 }
-@media screen and (max-width: 768px) {
-  #mainnav {
-    padding: 15px 0; /* Ajuste del espaciado para pantallas más pequeñas */
-    justify-content: center; /* Centrar elementos horizontalmente */
-  }
 
+@media (max-width: 768px) {
+
+  #mainnav {
+    padding: 5px 0; 
+    max-height: 200px;
+    overflow: scroll;
+  }
+  
   #mainnav ul {
-    flex-wrap: wrap; /* Permitir el ajuste de los elementos en varias líneas */
+    flex-direction: column;
   }
 
   #mainnav li {
-    margin: 10px; /* Espaciado entre elementos */
+    margin: 5px;
+    font-size: 1em;
   }
+
+  #mainnav span {
+    font-size: .5em;
+  }
+
 }
