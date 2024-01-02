@@ -182,21 +182,17 @@ header .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
   z-index: 100;
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: flex-end; /* Alinear en la parte inferior */
 }
 
 #mainnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 #mainnav li {
   font-size: 1.2em;
-  margin-right: 10px; /* Añadido margen derecho entre elementos */
+  margin-bottom: 10px; /* Agregado margen inferior entre elementos */
 }
 
 #mainnav a {
@@ -207,6 +203,15 @@ header .navbar {
 
 #mainnav a:hover {
   color: #C06B3E;
+}
+
+/* Estilos adicionales para el acordeón */
+#mainnav li span {
+  display: none;
+}
+
+#mainnav li.active span {
+  display: inline;
 }
 
 #mainnav li:hover span {
