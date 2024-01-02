@@ -97,3 +97,71 @@
     display: none;
   }
 }
+/* Resto del CSS ... */
+
+/* Media Query para diseño responsive */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+    position: fixed;
+    background-color: #05070c;
+    width: 100%;
+    z-index: 1001; /* Asegura que la barra de navegación esté sobre la sección de testimonios */
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  #hamburger-btn,
+  #close-menu-btn {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .testimonial {
+    margin-top: 80px; /* Espaciado para evitar que la barra de navegación cubra la sección de testimonios */
+  }
+
+  .swiper-pagination,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Oculta la paginación y los botones de navegación en dispositivos pequeños */
+  }
+
+  .hero-section {
+    padding-top: 140px; /* Ajuste de espacio en la sección de testimonios */
+  }
+
+  .container {
+    padding-top: 0; /* Ajuste de espacio en la sección de testimonios */
+  }
+
+  .testimonial .slide p {
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* Resto del CSS ... */
