@@ -58,6 +58,7 @@ header .navbar {
   background-image: url("../images/mapi-2_out.png");
   background-position: center;
   background-size: cover;
+
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -114,6 +115,9 @@ header .navbar {
 }
 
 @media (max-width: 768px) {
+  body{
+    background-size: cover;
+  }
   header {
     padding: 10px;
   }
