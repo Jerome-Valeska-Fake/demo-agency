@@ -191,7 +191,7 @@ header {
 
 .mosaic-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding-top: 25px;
   padding-left: 20px;
@@ -220,24 +220,4 @@ header {
     max-width: none;
     margin-bottom: 20px;
   }
-}
-
-
-.navigation-arrows {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.arrow {
-  font-size: 24px;
-  background-color: var(--brand-color);
-  color: var(--white);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.arrow:hover {
-  background-color: darken(var(--brand-color), 10%);
 }
