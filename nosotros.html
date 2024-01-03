@@ -39,7 +39,7 @@
           <h2>Valores</h2>
           <p>La empresa se basa en la responsabilidad, la honestidad, el respeto mutuo, el trabajo en equipo, el profesionalismo, la transparencia en las acciones, el compromiso, el crecimiento, la innovación constante y sobre todo la satisfacción de cada uno de nuestros clientes. </p>
           <div class="data">
-            <a href="contacto.html" class="hire">Contactarme</a>
+            <a href="" id="explore-tours-btn-whatsapp" class="hire">Contactarme</a>
           </div>
         </div>
       </div>
@@ -56,6 +56,16 @@
 
       // Close mobile menu on close button click
       closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      
+        document.addEventListener("DOMContentLoaded", function() {
+          const exploreBtn = document.getElementById("explore-tours-btn-whatsapp");
+        
+          exploreBtn.addEventListener("click", function() {
+            mensaje = "Acabo de ver tu pagina y me gustaria tener mas onformacion de los tours";
+            window.open("https://wa.me/+51953000099?text=" + mensaje);
+          });
+        });
+      
     </script>
     
   </body>

@@ -103,6 +103,11 @@ header .navbar {
   background: #C06B3E;
 }
 
+.hero-section .content .explore-btn-whatsapp:hover {
+  color: #fff;
+  background: #39922e;
+}
+
 #close-menu-btn {
   position: absolute;
   right: 20px;
