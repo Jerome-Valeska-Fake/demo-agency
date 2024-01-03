@@ -15,7 +15,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.411);
 }
 
@@ -58,7 +58,7 @@ header .navbar {
 .hero-section {
   height: 100vh;
   background: url("../images/mapi-2_out.png");
-  background-position: top;
+  background-position: 0px 30%;
   background-size: cover;
   background-repeat: no-repeat;
 
