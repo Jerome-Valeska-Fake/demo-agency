@@ -58,14 +58,15 @@ header .navbar {
 .hero-section {
   height: 100vh;
   background: url("../images/mapi-2_out.png");
-  background-position: 0px 30%;
+  background-position: top; /* Ajusta según tus necesidades */
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-attachment: scroll; /* Cambiado de fixed a scroll */
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
+
 
 .hero-section .content {
   max-width: 1200px;
@@ -327,4 +328,19 @@ header .navbar {
     font-size: .5em;
   }
 
+}
+
+@media (max-width: 768px) {
+  .hero-section .content h2 {
+    font-size: 2rem; /* Ajusta según tus necesidades */
+    line-height: 50px; /* Ajusta según tus necesidades */
+  }
+
+  .hero-section .content p {
+    font-size: 1rem; /* Ajusta según tus necesidades */
+  }
+
+  .hero-section .content button {
+    padding: 10px 20px; /* Ajusta según tus necesidades */
+  }
 }
